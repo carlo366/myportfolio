@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.image-container {
+    position: relative;
+    width: 205px;
+    height: 205px;
+    margin-top: 8rem;
+}
+
+.image-container .inner-circle {
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    border: 6px solid #94a3b8;
+    overflow: hidden;
+    animation: rotate 20s linear infinite;
+}
+
+.image-container .inner-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container .outer-circle {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 230px;
+    height: 230px;
+    border: 6px solid #94a3b8;
+    border-radius: 50%;
+    animation: rotate 30s linear infinite reverse;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Fade In Animation for Text */
+h1, p {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Writing Animation for "Carlo Sembiring" */
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid orange;
+    animation: typing 3.5s steps(30, end) infinite, blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+/* Button Styling */
+.link-button {
+    width: 4rem;
+    height: 4rem;
+    background-color: #94a3b8;
+    color: #374151;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.link-button:hover {
+    transform: translateY(-10px);
+    background-color: #475569;
+}
+
+.btns:hover {
+    background-color: #475569;
+}
+
+.btnss:hover {
+    transition: transform 0.3s ease;
+    transform: translateY(-10px);
+    opacity: 0.4;
+}
+.btnss{
+    transition: transform 0.1s ease;
+}

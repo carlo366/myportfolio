@@ -3,47 +3,19 @@
 export default {
 
     html : {
-        description : "Saya Membuat beberapa project dengan HTML ini",
-        bannerImage : 'https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        description : "Tampilan Halaman Produk yang menampilkan isi detail kriteria dari produk yang dijual",
+        bannerImage : '../src/assets/teodetail.png',
+        url : 'https://github.com/carlo366/PA2_Kelompok11',
         data : [
             {
                 id : 1,
-                title : "Membuat sebuah note app dengan HTML CSS JS",
-                multiLink : [
-                    {
-                        id : 1,
-                        name : "github",
-                        url : "https://github.com/fadliselaz"
-                    },
-                    {
-                        id : 2,
-                        name : "stackblitz",
-                        url : "https://stackblitz.com"
-                    },
-                    {
-                        id : 3,
-                        name : "codepen",
-                        url : "https://codepen.com/fadliselaz"
-                    },
-                ],
-                image : "https://images.pexels.com/photos/7350903/pexels-photo-7350903.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                title : "Tampilan Keranjang pada Pemesanan Produk",
+                image : "../src/assets/teocart.png",
             },
             {
                 id : 2,
-                title : "Aplikasi Data Siswa dengan HTML CSS JS",
-                multiLink : [
-                    {
-                        id : 1,
-                        name : "github",
-                        url : "https://github.com/fadliselaz"
-                    },
-                    {
-                        id : 2,
-                        name : "stackblitz",
-                        url : "https://stackblitz.com"
-                    }
-                ],
-                image : "https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                title : "Tampilan Barang Checkout",
+                image : "../src/assets/Screenshot_6-6-2024_94930_127.0.0.1.jpeg"
             }
         ]
     },

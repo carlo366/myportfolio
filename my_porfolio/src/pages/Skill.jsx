@@ -8,7 +8,7 @@ export default function Skill() {
     return (
         <div className="w-screen min-h-screen flex flex-col p-[30px] text-white bg-gray-800 overflow-hidden">
             <Header title={"Projek"} />
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 mt-12 mx-auto max-w-screen-lg">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 mt-12 mx-auto max-w-screen-lg">
                 {dataSkill.map((item) => (
                     <SkillCard
                         title={item.title}

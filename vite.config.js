@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base : "/jvalley_yt_project_portfolio-master/",
+  base : "/vite-react-deploy/",
 })

@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import ModalMenu from "../components/ModalMenu";
-import dataKemampuan from "/src/constant/dataKemampuan"; // Import dataKemampuan dari file yang benar
+import dataKemampuan from "../constant/datakemampuan"; // Import dataKemampuan dari file yang benar
 
 const MAX_SKILLS = 17;  // Batasi jumlah skill yang ditampilkan
 

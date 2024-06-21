@@ -4,7 +4,7 @@ import Biodata from "./pages/Biodata";
 import DetailSkill from "./pages/DetailSkill";
 import Home from "./pages/Home";
 import Skill from "./pages/Skill";
-import Kemampuan from "./pages/Kemampuan"; // Import Kemampuan component
+import Kemampuan from "/src/pages/Kemampuan"; // Import Kemampuan component
 
 export default function App() {
   return (

@@ -7,9 +7,27 @@ const BiodataCard = ({ label, value, icons, link }) => {
             <div className="flex flex-col text-left">
                 <span className="text-lg font-semibold text-white">{label}</span>
                 {link ? (
-                    <a href={link} className="text-gray-300 hover:text-teal-200 transition duration-300">
-                        {value}
-                    </a>
+                    // Jika link adalah link CV, tambahkan atribut download
+                    label === "CV" ? (
+                        <a
+                            href={link}
+                            className="text-gray-300 hover:text-teal-200 transition duration-300"
+                            target="_blank" // Membuka link di tab baru
+                            rel="noopener noreferrer"
+                            download="CV_Carlo_Sembiring.pdf" // Menambahkan download untuk CV
+                        >
+                            {value}
+                        </a>
+                    ) : (
+                        <a
+                            href={link}
+                            className="text-gray-300 hover:text-teal-200 transition duration-300"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {value}
+                        </a>
+                    )
                 ) : (
                     <span className="text-gray-400">{value}</span>
                 )}

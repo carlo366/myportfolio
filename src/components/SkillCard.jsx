@@ -7,11 +7,8 @@ export default function SkillCard({ title, image, content, link, multiLink }) {
             <h1 className="text-2xl text-white text-center font-semibold capitalize mb-4">{title}</h1>
             
             {/* Responsive Image */}
-            <img
-                src={image}
-                alt={title}
-                className="w-full h-auto max-h-72 object-cover rounded-lg mb-4"
-            />
+         <img src={image} alt={title} className="w-full h-auto max-h-72 object-cover rounded-lg mb-4" />
+
 
             <p className="text-gray-300 text-center mb-4">{content}</p>
 

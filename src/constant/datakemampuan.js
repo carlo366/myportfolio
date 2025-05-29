@@ -80,10 +80,15 @@ const dataKemampuan = [
      image: "https://download.logo.wine/logo/C%2B%2B/C%2B%2B-Logo.wine.png",
     },
     {
-        id: 16,
+        id: 17,
         title: "Vite JS",
      image: "https://logospng.org/download/vite-js/vite-js-4096-logo.png",
     },
+    {
+        id: 18,
+        title: "Python",
+        image: "https://pluspng.com/img-png/python-logo-png-open-2000.png",
+    }
 ];
 
 export default dataKemampuan;

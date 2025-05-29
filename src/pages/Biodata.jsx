@@ -1,7 +1,7 @@
 import React from "react";
 import BiodataCard from "../components/BiodataCard";
 import Header from "../components/Header";
-import { FiUser, FiPhone, FiMail, FiLinkedin, FiMap, FiWifi,FiInstagram } from "react-icons/fi";
+import { FiUser, FiPhone, FiMail, FiLinkedin, FiMap, FiWifi, FiInstagram } from "react-icons/fi";
 import dataBio from "../constant/dataBio";
 import ModalMenu from "../components/ModalMenu";
 import carloImage from '../assets/carlo.jpg';
@@ -20,34 +20,40 @@ const handleIcon = (name) => {
             return <FiWifi />;
         case "avatar":
             return <FiUser />;
-            case "instagram":
-                return <FiInstagram />;
+        case "instagram":
+            return <FiInstagram />;
         default:
-            return null; // Mengembalikan null jika tidak ada ikon yang sesuai
+            return null;
     }
 };
 
 export default function Biodata() {
     return (
-        <div className="w-screen min-h-screen flex flex-col items-center p-8 bg-gray-800 text-gray-400 overflow-hidden">
+        <div className="w-screen flex flex-col justify-center items-center p-8 bg-gradient-to-br from-indigo-900 w-screen p-[30px] bg-gray-800  text-white overflow-hidden">
+            {/* Header Section */}
             <Header title={'Biodata'} />
-            <div className="flex flex-col items-center mt-8">
-                <div className="relative w-48 h-48 md:w-60 md:h-60 lg:w-80 lg:h-80">
-                    <img src={carloImage} alt="Carlo Sembiring" className="rounded-full w-full h-full object-cover" />
-                    <div className="w-full h-full border-zinc-50 border-8 border-double border-slate-900 rounded-full absolute top-0 left-0"></div>
+
+            {/* Profile Image Section */}
+            <div className="flex flex-col items-center mt-16 mb-12">
+                <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 overflow-hidden rounded-full shadow-lg hover:scale-105 transition-all duration-300">
+                    <img src={carloImage} alt="Carlo Sembiring" className="w-full h-full object-cover rounded-full border-4 border-teal-500" />
                 </div>
+                <h2 className="text-3xl font-semibold mt-6 text-teal-200">Carlo Sembiring</h2>
             </div>
-            <div className="flex flex-col gap-8 w-full max-w-screen-sm mt-10">
+
+            {/* Biodata Cards Section */}
+            <div className="flex flex-col gap-6 w-full max-w-screen-lg mt-10">
                 {dataBio.map((item) => (
                     <BiodataCard
                         label={item.label}
                         value={item.value}
-                        icons={handleIcon(item.icons)} // Tidak perlu menggunakan '&&' karena 'handleIcon' akan mengembalikan null jika tidak ada ikon yang sesuai
+                        icons={handleIcon(item.icons)}
                         link={item.link}
                         key={item.id}
                     />
                 ))}
             </div>
+
             <ModalMenu />
         </div>
     );

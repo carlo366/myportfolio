@@ -110,3 +110,33 @@ h1, p {
 .btnss{
     transition: transform 0.1s ease;
 }
+/* Animasi mengetik */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Terapkan efek mengetik pada elemen */
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(30) 1s forwards, blink-caret 0.75s step-end infinite;
+}
+/* Animasi kursor berkedip */
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}

@@ -50,4 +50,14 @@ export default [
         image : "../src/assets/delfes.png",
         link : "https://youtu.be/frhXYEew3jY?si=fdGFFq-0JO89i4oV"
     },
+    {
+        id:8,
+        title: "Vite , React JS, Tailwind",
+        content :"membuat portofolio",
+        image: "../src/assets/portofolio.png",
+        link : "https://github.com/carlo366/myportfolio"
+    },
+    {
+        id:9,
+    }
 ]

@@ -30,7 +30,7 @@ export default  [
         id : 5,
         label : "LinkedIn",
         value : "@carlosembiring",
-        link : "https://www.linkedin.com/in/carlo-sembiring-75000827a/",
+        link : "https://www.linkedin.com/in/carlo-sembiring-564a39207/",
         icons : "linkedin"
     },
     {

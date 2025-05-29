@@ -1,4 +1,7 @@
 
+import teocart from '../assets/teocart.png';
+import ss from '../assets/Screenshot_6-6-2024_94930_127.0.0.1.jpeg';
+
 
 export default {
 
@@ -10,12 +13,12 @@ export default {
             {
                 id : 1,
                 title : "Tampilan Keranjang pada Pemesanan Produk",
-                image : "../src/assets/teocart.png",
+                image : teocart,
             },
             {
                 id : 2,
                 title : "Tampilan Barang Checkout",
-                image : "../src/assets/Screenshot_6-6-2024_94930_127.0.0.1.jpeg"
+                image : ss
             }
         ]
     },

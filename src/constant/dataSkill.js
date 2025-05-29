@@ -1,11 +1,11 @@
-import teo1 from '../src/assets/teo1.jpg';
-import wijaya from '../src/assets/wijaya.jpeg';
-import mobile from '../src/assets/mobile.jpg';
-import kotlin from '../src/assets/kotlin.jpg';
-import desktop from '../src/assets/desktop.jpg';
-import delfes from '../src/assets/delfes.png';
-import portofolio from '../src/assets/portofolio.png';
-import ayam from '../src/assets/ayam.jpg';
+import teo1 from '../assets/teo1.jpg';
+import wijaya from '../assets/wijaya.jpeg';
+import mobile from '../assets/mobile.jpg';
+import kotlin from '../assets/kotlin.jpg';
+import desktop from '../assets/desktop.jpg';
+import delfes from '../assets/delfes.png';
+import portofolio from '../assets/portofolio.png';
+import ayam from '../assets/ayam.jpg';
 
 export default [
   {
@@ -13,7 +13,7 @@ export default [
     title: "PHP Laravel , MSQL , JavaScript",
     content: "Rancang dan Bangun Website Eccommerce Toko Teo Prabot",
     image: teo1,
-    link: "/projek/html"
+    link: "/projek/teoprabot"
   },
   {
     id: 2,

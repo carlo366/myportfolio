@@ -59,5 +59,8 @@ export default [
     },
     {
         id:9,
+        title : "Python , Flask , Laravel , Bootstap",
+                image: "../src/assets/ayam.jpg",
+        content : "klasisikasi penyakit ayam berdasarkan kotoran dengan model CNN arsitektur Mobilevnet 2"
     }
 ]

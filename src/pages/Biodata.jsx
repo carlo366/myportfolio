@@ -22,7 +22,7 @@ export default function Biodata() {
 
         {/* CV Button */}
         <a
-          href="https://drive.google.com/file/d/16_Vetpo_xfnnWx6LDdgXowVgiX8DbQ-E/view?usp=sharing"
+          href="https://drive.google.com/file/d/1SpOtQz43kmaKQCFFjm3cqDDVkGBD4cmY/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 inline-block bg-teal-500 hover:bg-teal-400 text-white font-semibold py-2 px-6 rounded transition duration-300"

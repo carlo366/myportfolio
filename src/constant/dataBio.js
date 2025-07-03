@@ -53,11 +53,11 @@ export default [
         link: "https://www.instagram.com/carlo_sembiring/",
         icons: "instagram",
     },
-    {
-        id: 9,
-        label: "CV",
-        value: "Download CV",
-        link: "https://drive.google.com/file/d/16_Vetpo_xfnnWx6LDdgXowVgiX8DbQ-E/view?usp=sharing",
-        icons: "download", // Menambahkan ikon untuk CV
-    },
+    // {
+    //     id: 9,
+    //     label: "CV",
+    //     value: "Download CV",
+    //     link: "https://drive.google.com/file/d/16_Vetpo_xfnnWx6LDdgXowVgiX8DbQ-E/view?usp=sharing",
+    //     icons: "download", // Menambahkan ikon untuk CV
+    // },
 ];

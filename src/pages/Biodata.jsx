@@ -1,20 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import BiodataCard from "../components/BiodataCard";
 import Header from "../components/Header";
-import dataBio from "../constant/dataBio"; // Data biodata
-import handleIcon from "../utils/handleIcon"; // Fungsi untuk menangani ikon dinamis
+import dataBio from "../constant/dataBio";
+import handleIcon from "../utils/handleIcon";
 import ModalMenu from "../components/ModalMenu";
-import carloImage from '../assets/carlo.jpg'; // Gambar profil
+import carloImage from '../assets/carlo.jpg';
 
 export default function Biodata() {
-  useEffect(() => {
-    // Membuka link CV secara otomatis ketika komponen dimuat
-    const cvLink = "https://drive.google.com/file/d/16_Vetpo_xfnnWx6LDdgXowVgiX8DbQ-E/view?usp=sharing";
-    window.open(cvLink, "_blank"); // Membuka link di tab baru
-  }, []); // Hanya dijalankan sekali ketika komponen pertama kali dimuat
-
   return (
-    <div className="w-screen flex flex-col justify-center items-center p-8 bg-gradient-to-br from-indigo-900 w-screen p-[30px] bg-gray-800 text-white overflow-hidden">
+    <div className="w-screen flex flex-col justify-center items-center p-8 bg-gradient-to-br from-indigo-900 bg-gray-800 text-white overflow-hidden">
+      
       {/* Header Section */}
       <Header title={'Biodata'} />
 
@@ -24,15 +19,25 @@ export default function Biodata() {
           <img src={carloImage} alt="Carlo Sembiring" className="w-full h-full object-cover rounded-full border-4 border-teal-500" />
         </div>
         <h2 className="text-3xl font-semibold mt-6 text-teal-200">Carlo Sembiring</h2>
+
+        {/* CV Button */}
+        <a
+          href="https://drive.google.com/file/d/16_Vetpo_xfnnWx6LDdgXowVgiX8DbQ-E/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-block bg-teal-500 hover:bg-teal-400 text-white font-semibold py-2 px-6 rounded transition duration-300"
+        >
+          Lihat CV
+        </a>
       </div>
 
-      {/* Biodata Cards Section */}
+      {/* Biodata Cards */}
       <div className="flex flex-col gap-6 w-full max-w-screen-lg mt-10">
         {dataBio.map((item) => (
           <BiodataCard
             label={item.label}
             value={item.value}
-            icons={handleIcon(item.icons)} // Menggunakan handleIcon untuk mendapatkan ikon
+            icons={handleIcon(item.icons)}
             link={item.link}
             key={item.id}
           />

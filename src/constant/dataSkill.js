@@ -6,6 +6,7 @@ import desktop from '../assets/desktop.jpg';
 import delfes from '../assets/delfes.png';
 import portofolio from '../assets/portofolio.png';
 import ayam from '../assets/ayam.jpg';
+import gudang from '../assets/gudang.jpg';
 
 export default [
   {
@@ -69,5 +70,12 @@ export default [
     title: "Python , Flask , Laravel , Bootstap",
     image: ayam,
     content: "klasisikasi penyakit ayam berdasarkan kotoran dengan model CNN arsitektur Mobilevnet 2"
+  },
+  {
+  id: 10,
+  title: "Laravel 11, Vue.js, Blade, Reverb, QR Scanner",
+  image: gudang, // ganti ini sesuai nama file gambar yang kamu pakai
+  content: "Sistem manajemen gudang untuk mencatat barang masuk dan keluar, dilengkapi dengan scan QR/Barcode, laporan stok, notifikasi real-time dengan Laravel Reverb dan Vue.js modular.",
+  link: "https://github.com/carlo366/TSTHWHAREHOUSE/tree/main"
   }
 ];
